@@ -8,7 +8,6 @@
 import SwiftUI
 
 public struct StarShape: Shape {
-    @available(macOS 10.15, *)
     public func path(in rect: CGRect) -> Path {
         let center = CGPoint(x: rect.width / 2, y: rect.height / 2)
         var points: [CGPoint] = []
@@ -34,7 +33,6 @@ public struct StarShape: Shape {
 }
 
 struct StarShape_Previews: PreviewProvider {
-    @available(macOS 10.15, *)
     static var previews: some View {
         StarShape()
     }

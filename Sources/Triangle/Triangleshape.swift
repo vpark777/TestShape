@@ -8,7 +8,6 @@
 import SwiftUI
 
 public struct TriangleShape: Shape {
-    @available(macOS 10.15, *)
     public func path(in rect: CGRect) -> Path {
             var path = Path()
             
@@ -26,7 +25,6 @@ public struct TriangleShape: Shape {
 
 #if DEBUG
 struct TriangleShape_Previews: PreviewProvider {
-    @available(macOS 10.15, *)
     static var previews: some View {
         TriangleShape()
             .fill(Color.blue) // filling the triangle with a blue color for better visualization

@@ -10,7 +10,6 @@ import SwiftUI
 public struct CrescentMoonShape: Shape {
 
     public init() {}
-    @available(macOS 10.15, *)
     public func path(in rect: CGRect) -> Path {
            var path = Path()
 
@@ -34,7 +33,6 @@ public struct CrescentMoonShape: Shape {
 
 
 struct CrescentMoonShape_Previews: PreviewProvider {
-    @available(macOS 10.15, *)
     static var previews: some View {
         CrescentMoonShape()
     }
